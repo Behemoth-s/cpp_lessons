@@ -14,6 +14,11 @@ class MyInt
 public:
     MyInt(int n) { nVal = n; }
     int ReturnVal() { return nVal; }
+    MyInt &operator-(int a)
+    {
+        nVal -= a;
+        return *this;
+    }
     // 在此处补充你的代码
 };
 int main()

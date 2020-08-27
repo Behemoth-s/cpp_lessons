@@ -21,6 +21,14 @@ public:
     {
         cout << r << "+" << i << "i" << endl;
     }
+    Complex &operator=(const string &a)
+    {
+        // string a(s);
+        int pos = a.find("+");
+        r = stod(a.substr(0, pos));
+        i = stod(a.substr(pos + 1, a.length() - pos - 2));
+        return *this;
+    }
     // 在此处补充你的代码
 };
 int main()
