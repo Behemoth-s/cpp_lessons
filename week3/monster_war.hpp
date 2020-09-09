@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 const int HERO_CLASS_NUMBER = 5;
