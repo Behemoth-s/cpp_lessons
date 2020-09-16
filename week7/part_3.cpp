@@ -11,3 +11,13 @@
  * 第一行：以十六进制输出该整数；
  * 第二行：以10个字符的宽度输出该整数。
  **/
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    int i;
+    cin >> i;
+    cout << hex << i << endl;
+    cout << dec << setw(10) << i << endl;
+}

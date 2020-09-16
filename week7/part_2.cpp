@@ -11,3 +11,15 @@
  * 第一行：以非科学计数法输出该实数，小数点后面保留5位有效数字；
  * 第二行：以科学计数法输出该实数，小数点后面保留7位有效数字。
  **/
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    double r;
+    cin >> r;
+    cout << fixed << showpoint;
+    cout << setprecision(5) << r << endl;
+    cout << fixed << scientific;
+    cout << setprecision(7) << r << endl;
+}
